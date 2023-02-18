@@ -24,6 +24,26 @@ def sift(li, low, high):
         li[i] = tmp
 
 
+def topk(li, k):
+    heap = li[0:k]
+    for i in range((k - 2) // 2, -1, -1):
+        sift(heap, i, k - 1)
+
+
+    for i in range(k, len(li) - 1):
+        if li[i] > heap[0]:
+            heap[0] = li[i]
+            sift(heap, 0, k - 1)
+
+
+
+    for i in range(k - 1, -1, -1):
+        heap[0], heap[i] = heap[i], heap[0]
+        sift(heap, 0, i - 1)
+
+    return heap
+
+
 def heap_sort(li):
     n = len(li)
     for i in range((n -2)//2, -1, -1):

@@ -11,3 +11,6 @@ def shell_sort_v2(li):
             li[j + gap] = tmp
         gap //= 2
 
+lst = [2,1,4,6,7,3,5,9,8]
+shell_sort_v2(lst)
+print(lst)
