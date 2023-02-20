@@ -12,7 +12,7 @@ def cut_rod_recursion(p, n):
 
     return res
 
-# with DP, from down to top, like dict, save the caculated value
+# with 4. Problems, from down to top, like dict, save the caculated value
 
 def cut_rod_dp(p, n):
     r = [0]
