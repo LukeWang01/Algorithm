@@ -4,7 +4,7 @@
 # https://www.bilibili.com/video/BV1XL411g7qF?p=73&vd_source=7b952f8a8ddeb2e3edf4bff8eae66f3f
 #
 # Linear 1. Search
-from Python.calculate_time import calculate_time
+from Note.calculate_time import calculate_time
 
 
 @calculate_time

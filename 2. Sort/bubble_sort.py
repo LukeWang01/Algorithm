@@ -1,5 +1,5 @@
 # sort function;
-from Python.calculate_time import calculate_time
+from Note.calculate_time import calculate_time
 import random
 
 
